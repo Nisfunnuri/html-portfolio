@@ -19,7 +19,7 @@
 
       #leftnav {
         display: flex;
-        background-color: cadetblue;
+        background-color: #8fd5a6;
         list-style: none;
         /* justify-content: start; */
         flex-grow: 3;
@@ -34,7 +34,7 @@
 
       #rightbar {
         display: flex;
-        background-color: darkcyan;
+        background-color: #0d5d56;
         list-style: none;
         justify-content: space-evenly;
         /* padding: 15px; */
@@ -43,6 +43,10 @@
         align-items: center;
         color: white;
         font-weight: 700;
+      }
+      #rightbar li a{
+        color: #8fd5a6;
+        text-decoration: none;
       }
 
       #topBox {
@@ -58,22 +62,22 @@
       }
 
       #topBox1 {
-        background-color: darkturquoise;
+        background-color: #8fd5a6;
       }
 
       #topBox2 {
-        background-color: deepskyblue;
+        background-color: #329f5b;
       }
 
       #topBox3 {
-        background-color: lightseagreen;
+        background-color: #0c8346;
       }
 
       #topBox4 {
-        background-color: teal;
+        background-color: #0d5d56;
       }
 
-      #circle {
+      #contactWA {
         width: 50px;
         height: 50px;
         /* background-color: blue; */
@@ -83,7 +87,7 @@
         bottom: 20px;
       }
 
-      #circle img {
+      #contactWA img {
         width: 100%;
         height: 100%;
       }
@@ -94,19 +98,18 @@
         }
 
         #banner {
-          width: auto;
-          height: auto;
           display: flex;
-          /* flex-direction: column; */
-        }
-        
-        #greeting {
-          flex-direction: column;
-          align-items: center;
-          text-align: center;
-          padding: 20px;
+          flex-direction: row;
         }
 
+        #image {
+          max-width: 50%;
+        }
+
+        #greeting {
+          /* max-width: 50%; Mengurangi lebar greeting menjadi 50% */
+          padding: 20px;
+        }
       }
 
       @media (max-width: 640px) {
@@ -125,11 +128,6 @@
           text-align: center;
           padding: 50px;
         }
-
-        /* #image img {
-          width: 50px;
-          height: 50px;
-        } */
       }
 
       #leftnav img {
@@ -140,8 +138,8 @@
 
       #banner img {
         display: flex;
-        width: 500px;
-        height: 500px;
+        /* max-width: 100%; */
+        height: auto;
       }
 
       #greeting {
@@ -167,40 +165,92 @@
         text-align: center;
         padding: 50px;
       }
+
+      #contactMe {
+        /* position: absolute; */
+        bottom: 0;
+        width: 100%;
+        background-color: #b8e2c6;
+        /* padding: 20px; */
+        text-align: center;
+        /* z-index: 1; */
+      }
+
+      .contact-title {
+        color: white;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .contact-icons {
+        display: flex;
+        justify-content: center;
+      }
+
+      .contact-icons a {
+        margin: 0 20px;
+      }
+
+      .contact-icons img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        transition: transform 0.3s;
+      }
+
+      .contact-icons img:hover {
+        transform: scale(1.2);
+      }
+
+      footer {
+          background-color: #0d5d56;
+          color: white;
+          text-align: center;
+          padding: 10px 0;
+      }
+
+      footer p {
+          margin: 0;
+      }
+
     </style>
   </head>
   <body>
     <div id="header">
       <div class="navbar-container">
-        <div id="leftnav">
-          <a href="#"><img src="./logo.png" alt="" /></a>
-        </div>
-        <ul id="rightbar">
-          <li>About me</li>
-          <li>Skills</li>
-          <li>Contact</li>
-        </ul>
+          <div id="leftnav">
+              <a href="#"><img src="./logo.png" alt="" /></a>
+          </div>
+          <ul id="rightbar">
+              <li><a href="#about">About Me</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
       </div>
-    </div>
+  </div>
 
-    <div id="banner">
-      <div id="image">
-        <img src="./porto_image.png" alt="" />
- 
+    <div id="about">
+
+      <div id="banner">
+        <div id="image">
+          <img src="./porto_image.png" alt="" />
+          
           <p id="greeting">
-            <span style="font-size: 50px">Hello</span> My Name is Mohammad
+            <span style="font-size: 40px">Hello</span> My Name is Mohammad
             Nisfunnuri Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Earum aspernatur odit quos ratione reiciendis reprehenderit fuga,
-            aut, iusto unde, tempore aliquid in ad magni laudantium quisquam
-            officia doloremque accusantium alias.
+            Earum aspernatur odit quos ratione reiciendis reprehenderit fuga, aut,
+            iusto unde, tempore aliquid in ad magni laudantium quisquam officia
+            doloremque accusantium alias.
           </p>
-
-      </div>
+        </div>
+    </div>
     </div>
 
+
+    <div id="skills">
     <div id="topBox">
       <div id="topBox1" class="topBox">
-        <img class="logoskill" src="./icons8-javascript-24.png" alt="" />
+        <img class="logoskill" src="./icons8-javascript-512.png" alt="" />
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
           animi, nostrum dolorem dolor aut voluptatibus dignissimos dolore
@@ -209,7 +259,7 @@
         </p>
       </div>
       <div id="topBox2" class="topBox">
-        <img class="logoskill" src="./icons8-css-24.png" alt="" />
+        <img class="logoskill" src="./icons8-css-100.png" alt="" />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. In totam ipsa
           saepe voluptas nulla? Beatae animi non adipisci aliquam natus nemo
@@ -217,7 +267,7 @@
         </p>
       </div>
       <div id="topBox3" class="topBox">
-        <img class="logoskill" src="./icons8-html-24.png" alt="" />
+        <img class="logoskill" src="./icons8-html-100.png" alt="" />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
           repellat consectetur incidunt iste, vel a inventore facilis corrupti
@@ -226,7 +276,7 @@
         </p>
       </div>
       <div id="topBox4" class="topBox">
-        <img class="logoskill" src="./icons8-react-native-24.png" alt="" />
+        <img class="logoskill" src="./icons8-atom-100.png" alt="" />
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
           veritatis ut laboriosam odio aperiam ad consequatur, quis voluptatibus
@@ -235,8 +285,34 @@
         </p>
       </div>
     </div>
-    <div id="circle">
-      <div id="circlePop"><img src="./icons8-contact-us-96.png" alt="" /></div>
+  </div>
+  
+    <div id="contactWA">
+      <a
+      href="https://api.whatsapp.com/send?phone=6285731054136">
+      <div id="WA"><img src="./icons8-whatsapp-100.png" alt="" /></div>
+    </a>
+  </div>
+  
+    <div id="contact"
+    <div id="contactMe">
+      <h2 class="contact-title">Contact Me</h2>
+      <div class="contact-icons">
+        <a href="https://www.instagram.com/your_username/">
+          <img src="./icons8-instagram-100.png" alt="Instagram" />
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=6285731054136">
+          <img src="./icons8-whatsapp-100.png" alt="WhatsApp" />
+        </a>
+        <a href="mailto:youremail@example.com">
+          <img src="./icons8-email-100.png" alt="Email" />
+        </a>
+      </div>
     </div>
+  </div>
+
+    <footer>
+      <p>&copy;Mohammad Nisfunnuri 2023</p>
+  </footer>
   </body>
 </html>
