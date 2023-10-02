@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+      }
+
+      #leftnav {
+        display: flex;
+        background-color: cadetblue;
+        list-style: none;
+        /* justify-content: start; */
+        flex-grow: 3;
+        /* padding: ; */
+      }
+
+      .navbar-container {
+        display: flex;
+        align-items: center;
+        /* padding: ; */
+      }
+
+      #rightbar {
+        display: flex;
+        background-color: darkcyan;
+        list-style: none;
+        justify-content: space-evenly;
+        /* padding: 15px; */
+        flex-grow: 1;
+        height: 54px;
+        align-items: center;
+        color: white;
+        font-weight: 700;
+      }
+
+      #topBox {
+        display: flex;
+        /* justify-content: space-around; */
+        flex-wrap: nowrap;
+        /* background-color: #f0f0f0; */
+        /* padding: 20px; */
+        /* flex-direction: row; */
+        /* justify-content: space-evenly; */
+        color: white;
+        /* text-align:start; */
+      }
+
+      #topBox1 {
+        background-color: darkturquoise;
+      }
+
+      #topBox2 {
+        background-color: deepskyblue;
+      }
+
+      #topBox3 {
+        background-color: lightseagreen;
+      }
+
+      #topBox4 {
+        background-color: teal;
+      }
+
+      #circle {
+        width: 50px;
+        height: 50px;
+        /* background-color: blue; */
+        border-radius: 100%;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+      }
+
+      #circle img {
+        width: 100%;
+        height: 100%;
+      }
+
+      @media (min-width: 640px) {
+        #topBox {
+          color: bisque;
+        }
+
+        #banner {
+          width: auto;
+          height: auto;
+          display: flex;
+          /* flex-direction: column; */
+        }
+        
+        #greeting {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          padding: 20px;
+        }
+
+      }
+
+      @media (max-width: 640px) {
+        #greeting {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          padding: 20px;
+        }
+
+        #topBox {
+          flex-direction: column;
+        }
+
+        .topBox {
+          text-align: center;
+          padding: 50px;
+        }
+
+        /* #image img {
+          width: 50px;
+          height: 50px;
+        } */
+      }
+
+      #leftnav img {
+        width: 50px;
+        height: 50px;
+        padding-left: 60px;
+      }
+
+      #banner img {
+        display: flex;
+        width: 500px;
+        height: 500px;
+      }
+
+      #greeting {
+        color: black;
+        display: flex;
+        text-align: center;
+        align-items: center;
+      }
+
+      #image {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .logoskill {
+        width: 50px;
+      }
+
+      .topBox {
+        justify-content: center;
+        text-align: center;
+        padding: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <div class="navbar-container">
+        <div id="leftnav">
+          <a href="#"><img src="./logo.png" alt="" /></a>
+        </div>
+        <ul id="rightbar">
+          <li>About me</li>
+          <li>Skills</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="banner">
+      <div id="image">
+        <img src="./porto_image.png" alt="" />
+ 
+          <p id="greeting">
+            <span style="font-size: 50px">Hello</span> My Name is Mohammad
+            Nisfunnuri Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Earum aspernatur odit quos ratione reiciendis reprehenderit fuga,
+            aut, iusto unde, tempore aliquid in ad magni laudantium quisquam
+            officia doloremque accusantium alias.
+          </p>
+
+      </div>
+    </div>
+
+    <div id="topBox">
+      <div id="topBox1" class="topBox">
+        <img class="logoskill" src="./icons8-javascript-24.png" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
+          animi, nostrum dolorem dolor aut voluptatibus dignissimos dolore
+          repellat consequuntur aperiam neque fuga ullam eligendi assumenda
+          harum perspiciatis quae, adipisci sit.
+        </p>
+      </div>
+      <div id="topBox2" class="topBox">
+        <img class="logoskill" src="./icons8-css-24.png" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In totam ipsa
+          saepe voluptas nulla? Beatae animi non adipisci aliquam natus nemo
+          repudiandae suscipit, quibusdam accusamus est impedit rerum ut quo!
+        </p>
+      </div>
+      <div id="topBox3" class="topBox">
+        <img class="logoskill" src="./icons8-html-24.png" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+          repellat consectetur incidunt iste, vel a inventore facilis corrupti
+          exercitationem quis unde. Ipsum eos assumenda sint odit itaque ducimus
+          facilis quae?
+        </p>
+      </div>
+      <div id="topBox4" class="topBox">
+        <img class="logoskill" src="./icons8-react-native-24.png" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+          veritatis ut laboriosam odio aperiam ad consequatur, quis voluptatibus
+          iusto beatae cum debitis enim, minima quisquam nemo. Hic vel iusto
+          libero.
+        </p>
+      </div>
+    </div>
+    <div id="circle">
+      <div id="circlePop"><img src="./icons8-contact-us-96.png" alt="" /></div>
+    </div>
+  </body>
+</html>
